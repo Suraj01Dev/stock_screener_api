@@ -7,9 +7,7 @@ script_path=os.path.dirname(os.path.realpath(__file__))
 
 app = Flask(__name__)
 
-@app.route("/")
-def welcome():
-    return {"msg":"welcome"}
+
 
 @app.route("/stock_data")
 def stock_data():
